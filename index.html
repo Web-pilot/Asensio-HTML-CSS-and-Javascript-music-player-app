@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asensio Beats</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="music favicon.png">
+  </head>
+  <body>
+    <div class="music__container">
+      <div class="music__header">
+        <div class="music__logo">
+          <small>
+            <i class="fa-solid fa-music"></i>
+          </small>
+          <h3 class="logo__text">Music Player</h3>
+        </div>
+        <div class="theme">
+          <i class="fa-solid fa-sun"></i>
+        </div>
+      </div>
+
+      <audio src="" id="music"></audio>
+
+      <div class="music__box">
+        <div class="album__cover__container">
+          <img
+            src=""
+            alt="Burna-Boy-No-Sign-Of-Weakness-AlbumArtwork"
+            id="albumCover"
+          />
+        </div>
+        <div class="music__details">
+          <h3 class="track__title"></h3>
+          <h5 class="artist__name"></h5>
+        </div>
+        <div class="control__container">
+          <div class="btn__container">
+            <span class="btn prenext__btn" id="prenextBtn"
+              ><i class="fa-solid fa-backward-step"></i
+            ></span>
+
+            <span class="btn play" id="btn-play"
+              ><i class="fa-solid fa-play" id="toggle-play-and-pause"></i
+            ></span>
+
+            <span class="btn next__btn" id="nextBtn"
+              ><i class="fa-solid fa-forward-step"></i
+            ></span>
+          </div>
+          <p class="song_quantity"></p>
+          <input
+            type="range"
+            name=""
+            id="progress"
+            value="0"
+            min="0"
+            max="100"
+          />
+          <p class="music__time__display">0:01 / 0:00</p>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="repeat" id="repeat" title="reapeat"
+          ><i class="fa-solid fa-repeat" id="repeatIcon"></i
+        ></span>
+        <!-- <span  class="shuffleBtn" id="shuffle"><i class="fa-solid fa-shuffle"></i></span> -->
+        <span id="volume" title="volume"
+          ><i class="fa-solid fa-volume-high" id="volume-icon"></i
+        ></span>
+      </div>
+    </div>
+
+    <p class="developer__details">
+      <button onclick="window.open('https://wa.me/2349068155992?text=Hello%20%20%Mr%20Paul,%20I%20 saw%this%link%20on%20your%20music%20app.%20%20','_blank')">
+  <i class="fa-brands fa-whatsapp"></i> Say Hi
+</button>
+
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
